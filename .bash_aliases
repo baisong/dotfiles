@@ -1,4 +1,5 @@
 # bash aliases and shell functions.
+alias dev2live='terminus site deploy --site=tallay --env=test --from=dev --note="Run from AjA mac" && terminus site deploy --site=tallay --env=live --from=test --note="Run from AjA mac"'
 
 # grep search shortcut
 ff () {

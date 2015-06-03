@@ -10,16 +10,16 @@ export PIP_RESPECT_VIRTUALENV=true
 export WORKON_HOME=$HOME/.venv
 export EDITOR='subl -w'
  
-source /usr/local/bin/virtualenvwrapper.sh
-source ~/.resty/resty
-source ~/.git-completion.bash
+#source /usr/local/bin/virtualenvwrapper.sh
+#source ~/.resty/resty
+#source ~/.git-completion.bash
 # Node.js needed vars
-JOBS=2
+#JOBS=2
  
 ##### CMD Aliases #####
 alias ls="ls -G"
  
-[[ -s "/Users/maumercado/.rvm/scripts/rvm" ]] && source "/Users/maumercado/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+#[[ -s "/Users/maumercado/.rvm/scripts/rvm" ]] && source "/Users/maumercado/.rvm/scripts/rvm"  # This loads RVM into a shell session.
  
 RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
@@ -62,6 +62,6 @@ function set_git_branch {
 }
  
 set_git_branch
-set_virtualenv
+#set_virtualenv
  
 PS1="$CYAN$(date +%H:%M)$NO_COLOUR ${PYTHON_VIRTUALENV}$PURPLE\$(set_rvm_prompt)$NO_COLOUR\u@\h:[\W]${B_STATE}\$(parse_git_branch)$NO_COLOUR\$ "
